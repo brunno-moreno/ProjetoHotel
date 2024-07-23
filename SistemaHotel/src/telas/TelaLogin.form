@@ -53,14 +53,14 @@
                       <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="button2" min="-2" pref="215" max="-2" attributes="0"/>
-                              <EmptySpace pref="48" max="32767" attributes="0"/>
-                              <Component id="button1" min="-2" pref="215" max="-2" attributes="0"/>
+                              <Component id="sair" min="-2" pref="210" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="entrar" min="-2" pref="210" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" max="32767" attributes="0"/>
-                          <Component id="jPasswordField1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="login" pref="478" max="32767" attributes="0"/>
+                          <Component id="senha" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -84,15 +84,15 @@
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTextField1" min="-2" pref="38" max="-2" attributes="0"/>
+              <Component id="login" min="-2" pref="38" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPasswordField1" min="-2" pref="38" max="-2" attributes="0"/>
+              <Component id="senha" min="-2" pref="38" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="button1" pref="34" max="32767" attributes="0"/>
-                  <Component id="button2" max="32767" attributes="0"/>
+                  <Component id="entrar" pref="34" max="32767" attributes="0"/>
+                  <Component id="sair" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
           </Group>
@@ -116,9 +116,9 @@
         <Property name="text" type="java.lang.String" value="Login:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="login">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
@@ -129,23 +129,7 @@
         <Property name="text" type="java.lang.String" value="Senha:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JPasswordField" name="jPasswordField1">
-    </Component>
-    <Component class="java.awt.Button" name="button1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="12" style="1"/>
-        </Property>
-        <Property name="label" type="java.lang.String" value="Entrar"/>
-      </Properties>
-    </Component>
-    <Component class="java.awt.Button" name="button2">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="12" style="1"/>
-        </Property>
-        <Property name="label" type="java.lang.String" value="Sair"/>
-      </Properties>
+    <Component class="javax.swing.JPasswordField" name="senha">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
     </Component>
@@ -154,6 +138,16 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/hotelLogo.png"/>
         </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="sair">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sair"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="entrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>
     </Component>
   </SubComponents>
