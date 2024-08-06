@@ -331,6 +331,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         cadFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/add.png"))); // NOI18N
         cadFunc.setText("Cadastrar");
+        cadFunc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadFuncActionPerformed(evt);
+            }
+        });
         jMenu8.add(cadFunc);
 
         consultaFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/lupa.png"))); // NOI18N
@@ -595,7 +600,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 635, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(telaFundo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -645,6 +650,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void usuarioDesconectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioDesconectarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usuarioDesconectarActionPerformed
+
+    private void cadFuncActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadFuncActionPerformed
+        // TODO add your handling code here:
+        TelaCadastroFuncionario tela = new TelaCadastroFuncionario();
+        telaFundo.add(tela);
+        tela.setVisible(true);
+    }//GEN-LAST:event_cadFuncActionPerformed
 
     /**
      * @param args the command line arguments
